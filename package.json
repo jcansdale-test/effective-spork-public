@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "dotnet publish effective-spork-public.csproj -c Release -r linux-x64 --self-contained true -o bin"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jcansdale-test/effective-spork-public.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jamie Cansdale",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jcansdale-test/effective-spork-public/issues"
