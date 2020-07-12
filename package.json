@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare": "dotnet publish effective-spork-public.csproj -c Release -r linux-x64 --self-contained true -o bin"
+    "prepare": "dotnet publish effective-spork-public.csproj -c Release -r linux-x64 --self-contained true -o bin/linux-x64; dotnet publish effective-spork-public.csproj -c Release -r win-x64 --self-contained true -o bin/win-x64; dotnet publish effective-spork-public.csproj -c Release -r osx-x64 --self-contained true -o bin/osx-x64"
   },
   "repository": {
     "type": "git",
