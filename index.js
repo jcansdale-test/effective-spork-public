@@ -32,6 +32,6 @@ function findCommand(platform) {
   case 'linux':
     return path.join(__dirname, "publish", "linux-x64", "effective-spork-public");
   case 'darwin':
-    return path.join(__dirname, "publish", "osx-x64", "effective-spork-public");
+    return require('@jcansdale-test/dotnet-runtime-osx-x64');
   }
 }

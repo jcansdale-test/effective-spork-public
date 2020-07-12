@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jcansdale-test/effective-spork-public/issues"
   },
-  "homepage": "https://github.com/jcansdale-test/effective-spork-public#readme"
+  "homepage": "https://github.com/jcansdale-test/effective-spork-public#readme",
+  "dependencies": {
+    "@jcansdale-test/dotnet-runtime-osx-x64": "github:jcansdale-test/dotnet-runtime#osx-x64"
+  }
 }
