@@ -12,6 +12,10 @@ if (!command) {
 }
 
 const application = path.join(__dirname, 'publish', 'effective-spork-public.dll');
+
+console.log(application);
+console.log(command);
+
 const args = [application].concat(process.argv.slice(2));
 const child = spawn(command, args);
 
