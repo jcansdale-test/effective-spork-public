@@ -11,7 +11,9 @@ if (!command) {
   process.exit(1)
 }
 
-const child = spawn(command, process.argv.slice(2));
+const application = path.join(__dirname, 'publish', 'effective-spork-public.dll');
+const args = [application].concat(process.argv.slice(2));
+const child = spawn(command, args);
 
 child.stdout.on('data', (data) => {
   console.log(`${data}`);
