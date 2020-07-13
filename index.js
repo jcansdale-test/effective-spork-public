@@ -4,7 +4,7 @@ const path = require('path');
 const { spawn } = require('child_process');
 
 let platform = process.platform;
-let command = findCommand(platform);
+let command = require('@jcansdale-test/dotnet-runtime');
 
 if (!command) {
   console.error(`The ${platform} platform isn't currently supported.`);
@@ -27,14 +27,3 @@ child.stderr.on('data', (data) => {
 child.on('close', (code) => {
   process.exit(code)
 });
-
-function findCommand(platform) {
-  switch(platform) {
-  case 'win32':
-    return require('@jcansdale-test/dotnet-runtime-win-x64');
-  case 'linux':
-    return require('@jcansdale-test/dotnet-runtime-linux-x64');
-  case 'darwin':
-    return require('@jcansdale-test/dotnet-runtime-osx-x64');
-  }
-}
