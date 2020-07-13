@@ -31,7 +31,7 @@ child.on('close', (code) => {
 function findCommand(platform) {
   switch(platform) {
   case 'win32':
-    return path.join(__dirname, "publish", "win-x64", "effective-spork-public");
+    return require('@jcansdale-test/dotnet-runtime-win-x64');
   case 'linux':
     return require('@jcansdale-test/dotnet-runtime-linux-x64');
   case 'darwin':
