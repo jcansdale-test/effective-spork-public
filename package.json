@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "prepare": "dotnet publish -c Release --self-contained false -o publish"
   },
