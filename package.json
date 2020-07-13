@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/jcansdale-test/effective-spork-public#readme",
   "dependencies": {
-    "@jcansdale-test/dotnet-runtime-linux-x64": "github:jcansdale-test/dotnet-runtime#linux-x64",
-    "@jcansdale-test/dotnet-runtime-osx-x64": "github:jcansdale-test/dotnet-runtime#osx-x64",
-    "@jcansdale-test/dotnet-runtime-win-x64": "github:jcansdale-test/dotnet-runtime#win-x64"
+    "@jcansdale-test/dotnet-runtime-linux-x64": "^3.1.5",
+    "@jcansdale-test/dotnet-runtime-osx-x64": "^3.1.5",
+    "@jcansdale-test/dotnet-runtime-win-x64": "^3.1.5"
   }
 }
