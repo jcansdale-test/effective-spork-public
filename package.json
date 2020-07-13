@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
-    "prepare": "dotnet publish -c Release --self-contained false -o publish"
+    "prepublishOnly": "dotnet publish -c Release --self-contained false -o publish"
   },
   "repository": {
     "type": "git",
